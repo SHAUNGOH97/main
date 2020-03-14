@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e98e02-c0ff-4842-8d68-c0e22eaa40e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook.log.0" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook.log.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodiebot-food.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodiebot-food.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seedu/foodiebot/model/util/SampleDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seedu/foodiebot/model/util/SampleDataUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,25 +251,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1584163180441">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1584163470000">
       <screen x="0" y="0" width="1440" height="855" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.855@0.0.1440.855" timestamp="1584163180441" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.855@0.0.1440.855" timestamp="1584163470000" />
     <state width="1041" height="250" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1584162400060" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1584163180440">
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1584163469998">
       <screen x="0" y="0" width="1440" height="855" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.855@0.0.1440.855" timestamp="1584163180440" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.855@0.0.1440.855" timestamp="1584163469998" />
     <state width="1041" height="250" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1584162400059" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1584163180439">
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1584163469997">
       <screen x="0" y="0" width="1440" height="855" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.855@0.0.1440.855" timestamp="1584163180439" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.855@0.0.1440.855" timestamp="1584163469997" />
     <state width="1041" height="250" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1584162400059" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1584163180440">
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1584163469999">
       <screen x="0" y="0" width="1440" height="855" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.855@0.0.1440.855" timestamp="1584163180440" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.855@0.0.1440.855" timestamp="1584163469999" />
     <state width="1041" height="250" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1584162400060" />
     <state x="385" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1584162529396">
       <screen x="0" y="0" width="1440" height="855" />

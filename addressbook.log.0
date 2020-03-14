@@ -460,3 +460,152 @@ Mar 12, 2020 11:38:52 AM seedu.foodiebot.ui.UiManager start
 INFO: Starting UI...
 Mar 12, 2020 11:38:58 AM seedu.foodiebot.MainApp stop
 INFO: ============================ [ Stopping Address Book ] =============================
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.MainApp init
+INFO: =============================[ Initializing FoodieBot ]===========================
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.MainApp initConfig
+INFO: Using config file : config.json
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.MainApp initPrefs
+INFO: Using prefs file : preferences.json
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.commons.core.LogsCenter init
+INFO: currentLogLevel: INFO
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample FoodieBot
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.MainApp start
+INFO: Starting FoodieBot V0.6.0ea
+Mar 14, 2020 1:06:45 PM seedu.foodiebot.ui.UiManager start
+INFO: Starting UI...
+Mar 14, 2020 1:06:50 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 1]
+Mar 14, 2020 1:06:50 PM seedu.foodiebot.logic.commands.EnterCanteenCommand execute
+INFO: Enter Nus Flavors
+Mar 14, 2020 1:06:50 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: 
+Mar 14, 2020 1:06:52 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 9]
+Mar 14, 2020 1:06:52 PM seedu.foodiebot.logic.commands.EnterStallCommand execute
+INFO: Enter Western
+Mar 14, 2020 1:06:52 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: 
+Mar 14, 2020 1:06:54 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][exit]
+Mar 14, 2020 1:06:54 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Exited from menu : STALL
+Mar 14, 2020 1:06:55 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][exit]
+Mar 14, 2020 1:06:55 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Exited from menu : CANTEEN
+Mar 14, 2020 1:06:57 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomize 1]
+Mar 14, 2020 1:06:57 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Here are the choices: 
+The Deck
+Mar 14, 2020 1:07:00 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomie]
+Mar 14, 2020 1:07:00 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Invalid command: randomie
+Mar 14, 2020 1:07:01 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomie]
+Mar 14, 2020 1:07:01 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Invalid command: randomie
+Mar 14, 2020 1:07:03 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomize]
+Mar 14, 2020 1:07:03 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Here are the choices: 
+The Deck
+Mar 14, 2020 1:07:05 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][exit]
+Mar 14, 2020 1:07:05 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Exiting Address Book as requested ...
+Mar 14, 2020 1:07:05 PM seedu.foodiebot.MainApp stop
+INFO: ============================ [ Stopping Address Book ] =============================
+Mar 14, 2020 1:12:52 PM seedu.foodiebot.MainApp init
+INFO: =============================[ Initializing FoodieBot ]===========================
+Mar 14, 2020 1:12:52 PM seedu.foodiebot.MainApp initConfig
+INFO: Using config file : config.json
+Mar 14, 2020 1:12:52 PM seedu.foodiebot.MainApp initPrefs
+INFO: Using prefs file : preferences.json
+Mar 14, 2020 1:12:52 PM seedu.foodiebot.commons.core.LogsCenter init
+INFO: currentLogLevel: INFO
+Mar 14, 2020 1:12:52 PM seedu.foodiebot.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample FoodieBot
+Mar 14, 2020 1:12:53 PM seedu.foodiebot.MainApp start
+INFO: Starting FoodieBot V0.6.0ea
+Mar 14, 2020 1:12:53 PM seedu.foodiebot.ui.UiManager start
+INFO: Starting UI...
+Mar 14, 2020 1:13:00 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 2]
+Mar 14, 2020 1:13:01 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 2]
+Mar 14, 2020 1:13:04 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 1]
+Mar 14, 2020 1:13:04 PM seedu.foodiebot.logic.commands.EnterCanteenCommand execute
+INFO: Enter Nus Flavors
+Mar 14, 2020 1:13:04 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: 
+Mar 14, 2020 1:13:04 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][]
+Mar 14, 2020 1:13:04 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Invalid command: 
+Mar 14, 2020 1:13:07 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][exit]
+Mar 14, 2020 1:13:07 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Exited from menu : CANTEEN
+Mar 14, 2020 1:13:09 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][exit]
+Mar 14, 2020 1:13:09 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Exiting Address Book as requested ...
+Mar 14, 2020 1:13:09 PM seedu.foodiebot.MainApp stop
+INFO: ============================ [ Stopping Address Book ] =============================
+Mar 14, 2020 1:14:21 PM seedu.foodiebot.MainApp init
+INFO: =============================[ Initializing FoodieBot ]===========================
+Mar 14, 2020 1:14:21 PM seedu.foodiebot.MainApp initConfig
+INFO: Using config file : config.json
+Mar 14, 2020 1:14:21 PM seedu.foodiebot.MainApp initPrefs
+INFO: Using prefs file : preferences.json
+Mar 14, 2020 1:14:21 PM seedu.foodiebot.commons.core.LogsCenter init
+INFO: currentLogLevel: INFO
+Mar 14, 2020 1:14:21 PM seedu.foodiebot.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample FoodieBot
+Mar 14, 2020 1:14:22 PM seedu.foodiebot.MainApp start
+INFO: Starting FoodieBot V0.6.0ea
+Mar 14, 2020 1:14:22 PM seedu.foodiebot.ui.UiManager start
+INFO: Starting UI...
+Mar 14, 2020 1:14:25 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomie]
+Mar 14, 2020 1:14:25 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Invalid command: randomie
+Mar 14, 2020 1:14:27 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][randomize]
+Mar 14, 2020 1:14:27 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: Here are the choices: 
+The Deck
+Mar 14, 2020 1:14:28 PM seedu.foodiebot.MainApp stop
+INFO: ============================ [ Stopping Address Book ] =============================
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.MainApp init
+INFO: =============================[ Initializing FoodieBot ]===========================
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.MainApp initConfig
+INFO: Using config file : config.json
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.MainApp initPrefs
+INFO: Using prefs file : preferences.json
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.commons.core.LogsCenter init
+INFO: currentLogLevel: INFO
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample FoodieBot
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.MainApp start
+INFO: Starting FoodieBot V0.6.0ea
+Mar 14, 2020 1:19:43 PM seedu.foodiebot.ui.UiManager start
+INFO: Starting UI...
+Mar 14, 2020 1:20:01 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 2]
+Mar 14, 2020 1:20:01 PM seedu.foodiebot.logic.commands.EnterCanteenCommand execute
+INFO: Enter The Deck
+Mar 14, 2020 1:20:01 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: 
+Mar 14, 2020 1:20:05 PM seedu.foodiebot.logic.LogicManager execute
+INFO: ----------------[USER COMMAND][enter 1]
+Mar 14, 2020 1:20:05 PM seedu.foodiebot.logic.commands.EnterStallCommand execute
+INFO: Enter Taiwanese
+Mar 14, 2020 1:20:05 PM seedu.foodiebot.ui.MainWindow executeCommand
+INFO: Result: 
+Mar 14, 2020 1:20:07 PM seedu.foodiebot.MainApp stop
+INFO: ============================ [ Stopping Address Book ] =============================

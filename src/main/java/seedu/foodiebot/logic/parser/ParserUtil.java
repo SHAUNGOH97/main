@@ -14,6 +14,7 @@ import seedu.foodiebot.model.canteen.Block;
 import seedu.foodiebot.model.canteen.Canteen;
 import seedu.foodiebot.model.canteen.Name;
 import seedu.foodiebot.model.canteen.Stall;
+import seedu.foodiebot.model.food.Food;
 import seedu.foodiebot.model.tag.Tag;
 
 /** Contains utility methods used for parsing strings in the various *Parser classes. */
@@ -119,6 +120,16 @@ public class ParserUtil {
             throw new ParseException(Stall.MESSAGE_CONSTRAINTS);
         }
         return trimmedStallName;
+
+    }
+
+    public static String parseFoodName(String foodName) throws ParseException {
+        requireNonNull(foodName);
+        String trimmedFoodName = foodName.trim();
+        if (!Food.isValidFood(trimmedFoodName)) {
+            throw new ParseException(Food.MESSAGE_CONSTRAINTS);
+        }
+        return trimmedFoodName;
 
     }
 

@@ -24,7 +24,7 @@ class SelectItemCommandTest {
 
     @Test
     void execute_success() {
-        assertCommandSuccess(new SelectItemCommand(),
+        assertCommandSuccess(new SelectItemCommand("Combo Set"),
                 SelectItemCommand.COMMAND_WORD, model,
                 SelectItemCommand.MESSAGE_SUCCESS, expectedModel);
     }

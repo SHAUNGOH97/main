@@ -114,6 +114,7 @@ public interface Model {
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredFoodList(Predicate<Food> predicate);
-  
+
     boolean isLocationSpecified();
+
 }

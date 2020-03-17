@@ -31,8 +31,8 @@ public class SelectItemCommand extends Command {
             + COMMAND_WORD
             + " "
             + "1 ";;
-
-    public static final String MESSAGE_SUCCESS = "You have selected: %s\n"
+    public static final String MESSAGE_SUCCESS = "You have selected: %s\n";
+    public static final String MESSAGE_SUCCESS_BUDGET = "You have selected: %s\n"
             + "Your remaining budget is $%.2f\nWith $%.2f to spend today";
     private static final Logger logger = LogsCenter.getLogger(SelectItemCommand.class);
 
@@ -78,20 +78,26 @@ public class SelectItemCommand extends Command {
                 }
             }
         }
-        Budget savedBudget = model.getBudget().get();
-        savedBudget.subtractFromRemainingBudget(priceOfFood);
-        model.setBudget(savedBudget);
+        if (model.getBudget().isPresent()) {
+            Budget savedBudget = model.getBudget().get();
+            savedBudget.subtractFromRemainingBudget(priceOfFood);
 
-        ReadOnlyFoodieBot foodieBot = model.getFoodieBot();
-        Path budgetFilePath = new UserPrefs().getBudgetFilePath();
-        JsonUtil.saveJsonFile(new JsonAdaptedBudget(foodieBot), budgetFilePath);
+            model.setBudget(savedBudget);
+            ReadOnlyFoodieBot foodieBot = model.getFoodieBot();
+            Path budgetFilePath = new UserPrefs().getBudgetFilePath();
 
-        Budget newBudget = model.getBudget().get();
+            JsonUtil.saveJsonFile(new JsonAdaptedBudget(foodieBot), budgetFilePath);
 
-        return new CommandResult(COMMAND_WORD, String.format(
-                MESSAGE_SUCCESS,nameOfFood,
-                newBudget.getRemainingBudget(),
-                newBudget.getRemainingDailyBudget()));
+            Budget newBudget = model.getBudget().get();
+
+            return new CommandResult(COMMAND_WORD, String.format(
+                    MESSAGE_SUCCESS_BUDGET,nameOfFood,
+                    newBudget.getRemainingBudget(),
+                    newBudget.getRemainingDailyBudget()));
+        } else {
+            return new CommandResult(COMMAND_WORD, String.format(
+                    MESSAGE_SUCCESS, nameOfFood));
+        }
     }
 
     @Override

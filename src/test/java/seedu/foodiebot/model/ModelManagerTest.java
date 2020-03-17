@@ -12,10 +12,12 @@ import static seedu.foodiebot.testutil.TypicalCanteens.NUSFLAVORS;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.function.Predicate;
 
 import org.junit.jupiter.api.Test;
 
 import seedu.foodiebot.commons.core.GuiSettings;
+import seedu.foodiebot.model.canteen.Canteen;
 import seedu.foodiebot.model.canteen.NameContainsKeywordsPredicate;
 import seedu.foodiebot.testutil.FoodieBotBuilder;
 

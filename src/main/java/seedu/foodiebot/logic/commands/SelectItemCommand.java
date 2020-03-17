@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.core.index.Index;
 import seedu.foodiebot.commons.util.JsonUtil;
+import seedu.foodiebot.model.budget.Budget;
 import seedu.foodiebot.model.Model;
 import seedu.foodiebot.model.ReadOnlyFoodieBot;
 import seedu.foodiebot.model.UserPrefs;

@@ -136,15 +136,17 @@ public class Budget {
                     ? "weekly"
                     : "monthly";
     }
-
+    /** Return the date where the budget is created */
     public LocalDate getDateOfCreation() {
         return this.dateOfCreation;
     }
 
+    /** Return the cycle for which this budget is for. */
     public DateRange getCycleRange() {
         return this.cycleRange;
     }
 
+    /** . */
     public void subtractFromRemainingBudget(float expenses) {
         this.remainingBudget -= expenses;
         if (this.remainingBudget < 0) {
@@ -152,13 +154,14 @@ public class Budget {
         }
     }
 
+    /** . */
     public void addToRemainingBudget(float expenses) {
         this.remainingBudget += expenses;
         if (this.remainingBudget > this.totalBudget) {
             this.remainingBudget = this.totalBudget;
         }
     }
-
+    /** Check if this is a default value */
     public boolean isDefaultBudget() {
         return this.totalBudget == Float.MAX_VALUE;
     }

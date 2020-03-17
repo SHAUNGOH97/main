@@ -3,7 +3,6 @@ package seedu.foodiebot.logic.parser;
 import java.util.stream.Stream;
 
 import seedu.foodiebot.commons.core.index.Index;
-import seedu.foodiebot.logic.commands.EnterStallCommand;
 import seedu.foodiebot.logic.commands.SelectItemCommand;
 import seedu.foodiebot.logic.parser.exceptions.ParseException;
 

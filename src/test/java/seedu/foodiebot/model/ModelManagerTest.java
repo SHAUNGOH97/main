@@ -127,7 +127,8 @@ public class ModelManagerTest {
         assertFalse(modelManager.equals(new ModelManager(foodieBot, userPrefs)));
 
         // resets modelManager to initial state for upcoming tests
-        modelManager.updateFilteredCanteenList(PREDICATE_SHOW_ALL);
+        Predicate<Canteen> SHOW_ALL_PREDICATE = unused -> true;
+        modelManager.updateFilteredCanteenList(SHOW_ALL_PREDICATE);
 
 
         // different userPrefs -> returns false

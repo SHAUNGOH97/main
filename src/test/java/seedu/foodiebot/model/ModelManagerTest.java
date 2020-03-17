@@ -3,7 +3,6 @@ package seedu.foodiebot.model;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static seedu.foodiebot.model.Model.PREDICATE_SHOW_ALL;
 
 import static seedu.foodiebot.testutil.Assert.assertThrows;
 import static seedu.foodiebot.testutil.TypicalCanteens.DECK;
@@ -129,8 +128,8 @@ public class ModelManagerTest {
         assertFalse(modelManager.equals(new ModelManager(foodieBot, userPrefs)));
 
         // resets modelManager to initial state for upcoming tests
-        Predicate<Canteen> SHOW_ALL_PREDICATE = unused -> true;
-        modelManager.updateFilteredCanteenList(SHOW_ALL_PREDICATE);
+        Predicate<Canteen> ShowAllPredicate = unused -> true;
+        modelManager.updateFilteredCanteenList(ShowAllPredicate);
 
 
         // different userPrefs -> returns false

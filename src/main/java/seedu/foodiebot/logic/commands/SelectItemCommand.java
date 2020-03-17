@@ -2,13 +2,12 @@ package seedu.foodiebot.logic.commands;
 
 import static java.util.Objects.requireNonNull;
 
-import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.core.index.Index;
+import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.util.JsonUtil;
-import seedu.foodiebot.logic.commands.BudgetCommand;
 import seedu.foodiebot.model.budget.Budget;
-import seedu.foodiebot.model.Model;
 import seedu.foodiebot.model.food.Food;
+import seedu.foodiebot.model.Model;
 import seedu.foodiebot.model.ReadOnlyFoodieBot;
 import seedu.foodiebot.model.UserPrefs;
 import seedu.foodiebot.storage.JsonAdaptedBudget;
@@ -91,7 +90,7 @@ public class SelectItemCommand extends Command {
             Budget newBudget = model.getBudget().get();
 
             return new CommandResult(COMMAND_WORD, String.format(
-                    MESSAGE_SUCCESS_BUDGET,nameOfFood,
+                    MESSAGE_SUCCESS_BUDGET, nameOfFood,
                     priceOfFood,
                     newBudget.getRemainingBudget(),
                     newBudget.getRemainingDailyBudget()));

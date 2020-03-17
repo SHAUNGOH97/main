@@ -4,9 +4,9 @@ import static java.util.Objects.requireNonNull;
 
 import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.core.index.Index;
-import seedu.foodiebot.logic.parser.ParserContext;
+import seedu.foodiebot.logic.commands.BudgetCommand;
+import seedu.foodiebot.model.budget.Budget;
 import seedu.foodiebot.model.Model;
-import seedu.foodiebot.model.canteen.Canteen;
 import seedu.foodiebot.model.food.Food;
 
 import java.util.List;
@@ -26,7 +26,8 @@ public class SelectItemCommand extends Command {
             + " "
             + "1 ";;
 
-    public static final String MESSAGE_SUCCESS = "You have selected:\n%s";
+    public static final String MESSAGE_SUCCESS = "You have selected: %s\n"
+            + "Your remaining budget is $%.2f\nWith $%.2f to spend today";
     private static final Logger logger = LogsCenter.getLogger(SelectItemCommand.class);
 
     private final Optional<String> foodName;
@@ -54,27 +55,31 @@ public class SelectItemCommand extends Command {
     public CommandResult execute(Model model) {
         requireNonNull(model);
         String nameOfFood = "";
+        float priceOfFood = 0;
         if (index.isPresent()) {
             List<Food> foodList;
             foodList = model.getFilteredFoodList();
             Food food = foodList.get(index.get().getZeroBased());
             nameOfFood = food.getName();
+            priceOfFood = food.getPrice();
             logger.info("Enter " + food.getName());
-//            model.updateFilteredStallList(s -> s.getCanteenName().equalsIgnoreCase(
-//                    canteen.getName().toString()));
-
         } else if (foodName.isPresent()) {
             List<Food> foodList = model.getFilteredFoodList();
             for (Food f : foodList) {
                 if (f.getName().equalsIgnoreCase(foodName.get())) {
                     nameOfFood = foodName.get();
-//                    ParserContext.setCanteenContext(c);
-//                    model.updateFilteredStallList(s -> s.getCanteenName().equalsIgnoreCase(c.getName().toString()));
+                    priceOfFood = f.getPrice();
                     break;
                 }
             }
         }
-        return new CommandResult(COMMAND_WORD, String.format(MESSAGE_SUCCESS,nameOfFood));
+        Budget savedBudget = model.getBudget().get();
+        savedBudget.subtractFromRemainingBudget(priceOfFood);
+        model.setBudget(savedBudget);
+        return new CommandResult(COMMAND_WORD, String.format(
+                MESSAGE_SUCCESS,nameOfFood,
+                savedBudget.getRemainingBudget(),
+                savedBudget.getRemainingDailyBudget()));
     }
 
     @Override

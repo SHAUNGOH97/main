@@ -2,6 +2,12 @@ package seedu.foodiebot.logic.commands;
 
 import static java.util.Objects.requireNonNull;
 
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.logging.Logger;
+import java.util.Optional;
+
 import seedu.foodiebot.commons.core.index.Index;
 import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.util.JsonUtil;
@@ -11,12 +17,6 @@ import seedu.foodiebot.model.Model;
 import seedu.foodiebot.model.ReadOnlyFoodieBot;
 import seedu.foodiebot.model.UserPrefs;
 import seedu.foodiebot.storage.JsonAdaptedBudget;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.util.List;
-import java.util.Optional;
-import java.util.logging.Logger;
 
 /** Select the current list view item. */
 public class SelectItemCommand extends Command {

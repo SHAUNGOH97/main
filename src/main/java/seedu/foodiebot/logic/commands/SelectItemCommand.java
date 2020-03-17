@@ -4,11 +4,17 @@ import static java.util.Objects.requireNonNull;
 
 import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.commons.core.index.Index;
+import seedu.foodiebot.commons.util.JsonUtil;
 import seedu.foodiebot.logic.commands.BudgetCommand;
 import seedu.foodiebot.model.budget.Budget;
 import seedu.foodiebot.model.Model;
 import seedu.foodiebot.model.food.Food;
+import seedu.foodiebot.model.ReadOnlyFoodieBot;
+import seedu.foodiebot.model.UserPrefs;
+import seedu.foodiebot.storage.JsonAdaptedBudget;
 
+import java.io.IOException;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
@@ -52,13 +58,12 @@ public class SelectItemCommand extends Command {
     }
 
     @Override
-    public CommandResult execute(Model model) {
+    public CommandResult execute(Model model) throws IOException {
         requireNonNull(model);
         String nameOfFood = "";
         float priceOfFood = 0;
         if (index.isPresent()) {
-            List<Food> foodList;
-            foodList = model.getFilteredFoodList();
+            List<Food> foodList = model.getFilteredFoodList();
             Food food = foodList.get(index.get().getZeroBased());
             nameOfFood = food.getName();
             priceOfFood = food.getPrice();
@@ -76,10 +81,17 @@ public class SelectItemCommand extends Command {
         Budget savedBudget = model.getBudget().get();
         savedBudget.subtractFromRemainingBudget(priceOfFood);
         model.setBudget(savedBudget);
+
+        ReadOnlyFoodieBot foodieBot = model.getFoodieBot();
+        Path budgetFilePath = new UserPrefs().getBudgetFilePath();
+        JsonUtil.saveJsonFile(new JsonAdaptedBudget(foodieBot), budgetFilePath);
+
+        Budget newBudget = model.getBudget().get();
+
         return new CommandResult(COMMAND_WORD, String.format(
                 MESSAGE_SUCCESS,nameOfFood,
-                savedBudget.getRemainingBudget(),
-                savedBudget.getRemainingDailyBudget()));
+                newBudget.getRemainingBudget(),
+                newBudget.getRemainingDailyBudget()));
     }
 
     @Override

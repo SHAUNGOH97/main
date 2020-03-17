@@ -123,6 +123,12 @@ public class ParserUtil {
 
     }
 
+    /**
+     * Parses a {@code String foodName} into a {@code foodName}. Leading and trailing whitespaces will
+     * be trimmed
+     *
+     * @throws ParseException if the given {@code foodName} is invalid
+     */
     public static String parseFoodName(String foodName) throws ParseException {
         requireNonNull(foodName);
         String trimmedFoodName = foodName.trim();

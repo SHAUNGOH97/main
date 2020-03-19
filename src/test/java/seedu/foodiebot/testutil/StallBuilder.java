@@ -52,7 +52,6 @@ public class StallBuilder {
         this.cuisine = stallToCopy.getCuisine();
         this.overallPriceRating = stallToCopy.getOverallPriceRating();
         this.favorite = stallToCopy.getFavorite();
-        this.tags.add(DEFAULT_TAG);
     }
 
     /**

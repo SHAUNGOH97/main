@@ -1,7 +1,7 @@
 package seedu.foodiebot.model.tag;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.foodiebot.commons.util.AppUtil.checkArgument;
+//import static seedu.foodiebot.commons.util.AppUtil.checkArgument;
 
 /**
  * Represents a Tag in the address book. Guarantees: immutable; name is valid as declared in {@link

@@ -17,7 +17,7 @@ public class JsonAdaptedStallTest {
     @Test
     public void toModelType_validStallDetails_returnsStall() throws Exception {
         JsonAdaptedStall stall = new JsonAdaptedStall("Muslim", "The Deck",
-            "5", "muslim.png", "muslim",
+            "5", "taiwanese.png", "muslim",
             "$", "0");
         assertEquals(MUSLIM, stall.toModelType());
     }
@@ -25,7 +25,7 @@ public class JsonAdaptedStallTest {
     //    @Test
     //    public void toModelType_invalidName_throwsIllegalValueException() {
     //        JsonAdaptedStall stall = new JsonAdaptedStall("T@iwanese", DECK.toString(),
-    //            "5", "muslim.png", "asian",
+    //            "5", "taiwanese.png", "asian",
     //            "$", "0");
     //        String expectedMessage = Name.MESSAGE_CONSTRAINTS;
     //        assertThrows(IllegalValueException.class, expectedMessage, stall::toModelType);
@@ -34,7 +34,7 @@ public class JsonAdaptedStallTest {
     @Test
     public void toModelType_nullName_throwsIllegalValueException() {
         JsonAdaptedStall stall = new JsonAdaptedStall(null, DECK.toString(),
-            "5", "muslim.png", "asian",
+            "5", "taiwanese.png", "asian",
             "$", "0");
         String expectedMessage =
             String.format(MISSING_FIELD_MESSAGE_FORMAT, Name.class.getSimpleName());

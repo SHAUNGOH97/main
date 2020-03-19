@@ -31,9 +31,48 @@ public class SampleDataUtil {
     public static Canteen[] getSampleCanteens() {
         ArrayList<Stall> deckStalls = new ArrayList<Stall>(
                 Arrays.asList(
-                        new Stall(new Name("Taiwanese"), "The Deck", 3, "muslim.png",
+                        new Stall(new Name("Chinese Cooked Food"), "The Deck", 1, "ChineseCookedFood.png",
                         "asian",
-                        "$", 0, getTagSet("noodle","halal", "spicy"), new ArrayList<>())));
+                        "$",0, getTagSet("rice","noodle","cheap","non-halal"), new ArrayList<>()),
+                        new Stall(new Name("Claypot Seafood Soup"), "The Deck", 2, "ClaypotSeafoodSoup.png",
+                        "asian",
+                        "$",0, getTagSet("rice","cheap","non-halal"), new ArrayList<>()),
+                        new Stall(new Name("Indian"), "The Deck", 3, "Indian.png",
+                        "asian",
+                        "$",0, getTagSet("spicy", "halal", "cheap", "asian"), new ArrayList<>()),
+                        new Stall(new Name("Japanese"), "The Deck", 4, "Jap.png",
+                        "asian",
+                        "$$",0, getTagSet("non-halal", "expensive", "asian"), new ArrayList<>()),
+                        new Stall(new Name("Muslim"), "The Deck", 5, "Muslim.png",
+                        "asian",
+                        "$",0, getTagSet("rice", "spicy", "halal", "cheap"), new ArrayList<>()),
+                        new Stall(new Name("Noodle"), "The Deck", 6, "Noodle.png",
+                        "asian",
+                        "$",0, getTagSet("noodle", "cheap", "non-halal", "asian"), new ArrayList<>()),
+                        new Stall(new Name("Roasted Delights"), "The Deck", 7, "RoastedDelights.png",
+                        "asian",
+                        "$",0, getTagSet("rice", "cheap", "non-halal"), new ArrayList<>()),
+                        new Stall(new Name("Snacks and Fried Kway Teow"), "The Deck", 8, "Snacks&FKT.png",
+                        "asian",
+                        "$",0, getTagSet("noodle", "cheap", "non-halal", "asian"), new ArrayList<>()),
+                        new Stall(new Name("Yong Tau Foo and Laksa"), "The Deck", 9, "YTF&Laksa.png",
+                        "asian",
+                        "$",0, getTagSet("noodle", "expensive", "non-halal"), new ArrayList<>()),
+                        new Stall(new Name("Vegetarian"), "The Deck", 10, "Vegetarian.png",
+                        "asian",
+                        "$",0, getTagSet("rice", "cheap", "halal"), new ArrayList<>()),
+                        new Stall(new Name("Western"), "The Deck", 11, "Western.png",
+                        "western",
+                        "$",0, getTagSet("expensive", "non-halal", "western"), new ArrayList<>()),
+                        new Stall(new Name("Pasta Express"), "The Deck", 13, "PastaExpress.png",
+                        "western",
+                        "$$",0, getTagSet("western", "non-halal", "expensive"), new ArrayList<>()),
+                        new Stall(new Name("Salad Express"), "The Deck", 14, "SaladExpress.png",
+                        "asian",
+                        "$",0, getTagSet("expensive", "non-halal"), new ArrayList<>()),
+                        new Stall(new Name("Uncle Penyet"), "The Deck", 15, "UnclePenyet.png",
+                        "fusion",
+                        "$",0, getTagSet("asian", "western", "rice", "spicy", "expensive"), new ArrayList<>())));
         ArrayList<Stall> flavourStalls = new ArrayList<Stall>(
                 Arrays.asList (
                         new Stall(new Name("Duck and Chicken Rice"), "Nus Flavors", 3, "DuckandChickenRice.png",
@@ -91,9 +130,48 @@ public class SampleDataUtil {
 
     public static Stall[] getSampleStalls() {
         return new Stall[]{
-            new Stall(new Name("Taiwanese"), "The Deck", 3, "muslim.png",
+            new Stall(new Name("Chinese Cooked Food"), "The Deck", 1, "ChineseCookedFood.png",
                 "asian",
-                "$", 0, getTagSet("noodle","halal", "spicy"), new ArrayList<>()),
+                "$",0, getTagSet("rice","noodle","cheap","non-halal"), new ArrayList<>()),
+            new Stall(new Name("Claypot Seafood Soup"), "The Deck", 2, "ClaypotSeafoodSoup.png",
+                "asian",
+                "$",0, getTagSet("rice","cheap","non-halal"), new ArrayList<>()),
+            new Stall(new Name("Indian"), "The Deck", 3, "Indian.png",
+                "asian",
+                "$",0, getTagSet("spicy", "halal", "cheap", "asian"), new ArrayList<>()),
+            new Stall(new Name("Japanese"), "The Deck", 4, "Jap.png",
+                "asian",
+                "$$",0, getTagSet("non-halal", "expensive", "asian"), new ArrayList<>()),
+            new Stall(new Name("Muslim"), "The Deck", 5, "Muslim.png",
+                "asian",
+                "$",0, getTagSet("rice", "spicy", "halal", "cheap"), new ArrayList<>()),
+            new Stall(new Name("Noodle"), "The Deck", 6, "Noodle.png",
+                "asian",
+                "$",0, getTagSet("noodle", "cheap", "non-halal", "asian"), new ArrayList<>()),
+            new Stall(new Name("Roasted Delights"), "The Deck", 7, "RoastedDelights.png",
+                "asian",
+                "$",0, getTagSet("rice", "cheap", "non-halal"), new ArrayList<>()),
+            new Stall(new Name("Snacks & Fried Kway Teow"), "The Deck", 8, "Snacks&FKT.png",
+                "asian",
+                "$",0, getTagSet("noodle", "cheap", "non-halal", "asian"), new ArrayList<>()),
+            new Stall(new Name("Yong Tau Foo & Laksa"), "The Deck", 9, "YTF&Laksa.png",
+                "asian",
+                "$",0, getTagSet("noodle", "expensive", "non-halal"), new ArrayList<>()),
+            new Stall(new Name("Vegetarian"), "The Deck", 10, "Vegetarian.png",
+                "asian",
+                "$",0, getTagSet("rice", "cheap", "halal"), new ArrayList<>()),
+            new Stall(new Name("Western"), "The Deck", 11, "Western.png",
+                "western",
+                "$",0, getTagSet("expensive", "non-halal", "western"), new ArrayList<>()),
+            new Stall(new Name("Pasta Express"), "The Deck", 13, "PastaExpress.png",
+                "western",
+                "$$",0, getTagSet("western", "non-halal", "expensive"), new ArrayList<>()),
+            new Stall(new Name("Salad Express"), "The Deck", 14, "SaladExpress.png",
+                "asian",
+                "$",0, getTagSet("expensive", "non-halal"), new ArrayList<>()),
+            new Stall(new Name("Uncle Penyet"), "The Deck", 15, "UnclePenyet.png",
+                "fusion",
+                "$",0, getTagSet("asian", "western", "rice", "spicy", "expensive"), new ArrayList<>()),
             new Stall(new Name("Duck and Chicken Rice"), "Nus Flavors", 3, "DuckandChickenRice.png",
                 "asian",
                 "$", 0, getTagSet("rice", "asian", "non-halal"), new ArrayList<>()),
@@ -132,13 +210,23 @@ public class SampleDataUtil {
 
     public static Food[] getSampleFoods() {
         return new Food[] { new Food("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "ComboSet.png",
-                        1, "Nus Flavors", "Western", getTagSet("1"))};
+                        1, "Nus Flavors", "Western", getTagSet("western", "expensive")),
+                            new Food("Cai Fan", 3, "1 Meat, 2 Veg", "Caifan.png",
+                        1, "The Deck", "Chinese Cooked Food", getTagSet("expensive")),
+                            new Food("Ayam Penyet", 5, "Ayam Penyet", "Ayam Penyet.png",
+                        15, "The Deck", "Uncle Penyet", getTagSet("asian", "western", "expensive")),
+        };
     }
 
 
     private static FavoriteFood[] getSampleFavoriteFood() {
-        return new FavoriteFood[] { new FavoriteFood("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "ComboSet.png",
-                1, "Nus Flavors", "Western", getTagSet("1"))};
+        return new FavoriteFood[]{new FavoriteFood("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "ComboSet.png",
+                1, "Nus Flavors", "Western", getTagSet("1")),
+                new FavoriteFood("Cai Fan", 3, "1 Meat, 2 Veg", "Caifan.png",
+                1, "The Deck", "Chinese Cooked Food", getTagSet("expensive")),
+                new FavoriteFood("Ayam Penyet", 5, "Ayam Penyet", "Ayam Penyet.png",
+                15, "The Deck", "Uncle Penyet", getTagSet("asian", "western", "expensive")),
+        };
     }
 
     public static ReadOnlyFoodieBot getSampleFoodieBot() {

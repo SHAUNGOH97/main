@@ -14,7 +14,7 @@ public class StallBuilder {
     public static final String DEFAULT_CANTEEN_NAME = "The Deck";
     public static final int DEFAULT_STALL_NUMBER = 0;
     public static final String DEFAULT_CUISINE = "muslim";
-    public static final String DEFAULT_STALL_IMAGE = "muslim.png";
+    public static final String DEFAULT_STALL_IMAGE = "taiwanese.png";
     public static final String DEFAULT_OVERALL_PRICERATING = "$";
     public static final int DEFAULT_IS_FAVORITE = 0;
 

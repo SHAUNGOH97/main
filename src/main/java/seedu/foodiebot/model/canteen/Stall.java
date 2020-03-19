@@ -3,14 +3,17 @@ package seedu.foodiebot.model.canteen;
 import static seedu.foodiebot.commons.util.CollectionUtil.requireAllNonNull;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 import java.util.logging.Logger;
 
 import javafx.scene.image.Image;
 
 import seedu.foodiebot.commons.core.LogsCenter;
 import seedu.foodiebot.model.food.Food;
+import seedu.foodiebot.model.tag.Tag;
 
 /**
  * Represents a Stall in FoodieBot. Guarantees: details are present and not null, field
@@ -25,6 +28,10 @@ public class Stall {
     public static final String IMAGE_FOLDER = "/images/canteen/";
     private static final Logger logger = LogsCenter.getLogger(Stall.class);
     public static final String MESSAGE_CONSTRAINTS = "Stall name should be from " + Arrays.toString(STALLS);
+
+    // Data fields
+    private final Set<Tag> tags = new HashSet<>();
+
     // Identity fields
     private final Name name;
     private final String canteenName;
@@ -40,7 +47,7 @@ public class Stall {
      */
     public Stall(
         Name name, String canteenName, int stallNumber, String stallImageName,
-        String cuisine, String overallPriceRating, int favorite, List<Food> foodMenu) {
+        String cuisine, String overallPriceRating, int favorite, Set<Tag> tags, List<Food> foodMenu) {
         requireAllNonNull(name, canteenName, stallNumber, stallImageName, cuisine, overallPriceRating, favorite);
         this.name = name;
         this.canteenName = canteenName;
@@ -50,6 +57,7 @@ public class Stall {
         this.overallPriceRating = overallPriceRating;
         this.favorite = favorite;
         this.foodMenu = foodMenu;
+        this.tags.addAll(tags);
     }
 
     public Name getName() {

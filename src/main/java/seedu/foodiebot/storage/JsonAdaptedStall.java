@@ -1,7 +1,9 @@
 package seedu.foodiebot.storage;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import seedu.foodiebot.commons.exceptions.IllegalValueException;
 import seedu.foodiebot.model.canteen.Name;
 import seedu.foodiebot.model.canteen.Stall;
-
+import seedu.foodiebot.model.tag.Tag;
 
 
 /** Jackson-friendly version of {@link Stall}. */
@@ -24,6 +26,7 @@ class JsonAdaptedStall {
     private final String cuisine;
     private final String overallPriceRating;
     private final int favorite;
+    private final Set<Tag> tags = new HashSet<>();
 
     private final List<JsonAdaptedTag> tagged = new ArrayList<>();
 
@@ -75,7 +78,10 @@ class JsonAdaptedStall {
 
         final String modelCanteenName = canteenName;
 
+        Tag spicy = new Tag("spicy");
+        final Set<Tag> tags = new HashSet<>();
+
         return new Stall(modelName, modelCanteenName, stallNumber, stallImageName, cuisine,
-                overallPriceRating, favorite, new ArrayList<>());
+                overallPriceRating, favorite, tags, new ArrayList<>());
     }
 }

@@ -40,5 +40,12 @@ public class JsonAdaptedStallTest {
             String.format(MISSING_FIELD_MESSAGE_FORMAT, Name.class.getSimpleName());
         assertThrows(IllegalValueException.class, expectedMessage, stall::toModelType);
     }
+    
+    /**
+     * Returns a tag set containing the list of strings given.
+     */
+    public static Set<JsonAdaptedTag> getTagSet(String... strings) {
+        return Arrays.stream(strings).map(JsonAdaptedTag::new).collect(Collectors.toSet());
+    }
 
 }

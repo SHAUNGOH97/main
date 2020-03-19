@@ -11,6 +11,10 @@ import org.junit.jupiter.api.Test;
 import seedu.foodiebot.commons.exceptions.IllegalValueException;
 import seedu.foodiebot.model.canteen.Name;
 
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 public class JsonAdaptedStallTest {
     private static final String VALID_CANTEEN_NAME = DECK.getName().toString();
 

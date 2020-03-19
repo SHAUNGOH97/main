@@ -31,8 +31,6 @@ public class StallBuilder {
     private String overallPriceRating;
     private int favorite;
     
-
-
     public StallBuilder() {
         this.name = new Name(DEFAULT_NAME);
         this.canteenName = DEFAULT_CANTEEN_NAME;

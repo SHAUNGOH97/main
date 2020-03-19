@@ -1,19 +1,19 @@
 package seedu.foodiebot.storage;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static seedu.foodiebot.storage.JsonAdaptedStall.MISSING_FIELD_MESSAGE_FORMAT;
 import static seedu.foodiebot.testutil.Assert.assertThrows;
 import static seedu.foodiebot.testutil.TypicalCanteens.DECK;
 import static seedu.foodiebot.testutil.TypicalStalls.MUSLIM;
 
-import org.junit.jupiter.api.Test;
-
-import seedu.foodiebot.commons.exceptions.IllegalValueException;
-import seedu.foodiebot.model.canteen.Name;
-
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import seedu.foodiebot.commons.exceptions.IllegalValueException;
+import seedu.foodiebot.model.canteen.Name;
 
 public class JsonAdaptedStallTest {
     private static final String VALID_CANTEEN_NAME = DECK.getName().toString();

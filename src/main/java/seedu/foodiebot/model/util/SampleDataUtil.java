@@ -75,7 +75,7 @@ public class SampleDataUtil {
                         "$",0, getTagSet("asian", "western", "rice", "spicy", "expensive"), new ArrayList<>())));
         ArrayList<Stall> flavourStalls = new ArrayList<Stall>(
                 Arrays.asList (
-                        new Stall(new Name("Duck and Chicken Rice"), "Nus Flavors", 3, "DuckandChickenRice.png",
+                        new Stall(new Name("Duck and Chicken Rice"), "Nus Flavors", 1, "DuckandChickenRice.png",
                                 "asian",
                                 "$", 0, getTagSet("rice", "asian", "non-halal"), new ArrayList<>()),
                         new Stall(new Name("Five Grains Bee Hoon"), "Nus Flavors", 5, "FiveGrainsBeeHoon.png",
@@ -111,7 +111,7 @@ public class SampleDataUtil {
         return new Canteen[]{
             new Canteen(
                 new Name("Nus Flavors"),
-                2,
+                11,
                 3200,
                 "COM1",
                 "utown_flavors.png",
@@ -119,7 +119,7 @@ public class SampleDataUtil {
                 getTagSet("asian", "western", "muslim"), "utown.jpg", new ArrayList<>(flavourStalls)),
             new Canteen(
                 new Name("The Deck"),
-                3,
+                1,
                 1000,
                 "COM1,",
                 "com1_deck.png",

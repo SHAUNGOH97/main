@@ -1,7 +1,5 @@
 package seedu.foodiebot.storage;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static seedu.foodiebot.storage.JsonAdaptedStall.MISSING_FIELD_MESSAGE_FORMAT;
 import static seedu.foodiebot.testutil.Assert.assertThrows;
@@ -11,6 +9,8 @@ import static seedu.foodiebot.testutil.TypicalStalls.MUSLIM;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import org.junit.jupiter.api.Test;
 
 import seedu.foodiebot.commons.exceptions.IllegalValueException;
 import seedu.foodiebot.model.canteen.Name;
@@ -44,7 +44,7 @@ public class JsonAdaptedStallTest {
             String.format(MISSING_FIELD_MESSAGE_FORMAT, Name.class.getSimpleName());
         assertThrows(IllegalValueException.class, expectedMessage, stall::toModelType);
     }
-    
+
     /**
      * Returns a tag set containing the list of strings given.
      */

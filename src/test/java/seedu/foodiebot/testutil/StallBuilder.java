@@ -1,9 +1,12 @@
 package seedu.foodiebot.testutil;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import seedu.foodiebot.model.canteen.Name;
 import seedu.foodiebot.model.canteen.Stall;
+import seedu.foodiebot.model.tag.Tag;
 
 /**
  * A utility class to help with building Stall objects.

@@ -2,7 +2,7 @@ package seedu.foodiebot.storage;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
+//import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -40,7 +40,7 @@ class JsonAdaptedStall {
             @JsonProperty("cuisine") String cuisine,
             @JsonProperty("overallPriceRating") String overallPriceRating,
             @JsonProperty("favorite") String favorite,
-            @JsonProperty("tagged") Set<JsonAdaptedTag> tags){
+            @JsonProperty("tagged") Set<JsonAdaptedTag> tags) {
         this.name = name;
         this.stallNumber = Integer.parseInt(stallNumber);
         this.canteenName = canteenName;

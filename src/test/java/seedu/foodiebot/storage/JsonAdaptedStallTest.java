@@ -35,7 +35,7 @@ public class JsonAdaptedStallTest {
     public void toModelType_nullName_throwsIllegalValueException() {
         JsonAdaptedStall stall = new JsonAdaptedStall(null, DECK.toString(),
             "5", "taiwanese.png", "asian",
-            "$", "0");
+            "$", getTagSet("rice", "spicy", "halal", "cheap"), "0");
         String expectedMessage =
             String.format(MISSING_FIELD_MESSAGE_FORMAT, Name.class.getSimpleName());
         assertThrows(IllegalValueException.class, expectedMessage, stall::toModelType);

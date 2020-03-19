@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,9 +27,8 @@ class JsonAdaptedStall {
     private final String cuisine;
     private final String overallPriceRating;
     private final int favorite;
-    private final Set<Tag> tags = new HashSet<>();
 
-    private final List<JsonAdaptedTag> tagged = new ArrayList<>();
+    private final Set<JsonAdaptedTag> tags = new HashSet<>();
 
     /** Constructs a {@code JsonAdaptedStall} with the given person details. */
     @JsonCreator
@@ -39,7 +39,8 @@ class JsonAdaptedStall {
             @JsonProperty("stallImageName") String stallImageName,
             @JsonProperty("cuisine") String cuisine,
             @JsonProperty("overallPriceRating") String overallPriceRating,
-            @JsonProperty("favorite") String favorite) {
+            @JsonProperty("favorite") String favorite,
+            @JsonProperty("tagged") Set<JsonAdaptedTag> tags){
         this.name = name;
         this.stallNumber = Integer.parseInt(stallNumber);
         this.canteenName = canteenName;
@@ -47,6 +48,9 @@ class JsonAdaptedStall {
         this.cuisine = cuisine;
         this.overallPriceRating = overallPriceRating;
         this.favorite = Integer.parseInt(favorite);
+        if (tags != null) {
+            this.tags.addAll(tags);
+        }
     }
 
     /** Converts a given {@code Stall} into this class for Jackson use. */
@@ -58,6 +62,8 @@ class JsonAdaptedStall {
         this.cuisine = source.getCuisine();
         this.overallPriceRating = source.getOverallPriceRating();
         this.favorite = source.getFavorite();
+        tags.addAll(
+                source.getTags().stream().map(JsonAdaptedTag::new).collect(Collectors.toList()));
     }
 
     /**
@@ -78,7 +84,6 @@ class JsonAdaptedStall {
 
         final String modelCanteenName = canteenName;
 
-        Tag spicy = new Tag("spicy");
         final Set<Tag> tags = new HashSet<>();
 
         return new Stall(modelName, modelCanteenName, stallNumber, stallImageName, cuisine,

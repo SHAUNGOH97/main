@@ -101,6 +101,10 @@ public class Stall {
         return foodMenu;
     }
 
+    public Set<Tag> getTags() {
+        return tags;
+    }
+
     /**
      * Returns true if the {@code trimmedStallName} is a valid stall name
      */

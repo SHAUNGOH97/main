@@ -18,16 +18,7 @@ import seedu.foodiebot.model.tag.Tag;
  * Contains utility methods for populating {@code AddressBook} with sample data.
  */
 public class SampleDataUtil {
-    Tag spicy = new Tag("spicy");
-    Tag non_spicy = new Tag("non-spicy");
-    Tag rice = new Tag("rice");
-    Tag noodle = new Tag("noodle");
-    Tag expensive = new Tag("expensive");
-    Tag cheap = new Tag("cheap");
-    Tag asian = new Tag("asian");
-    Tag western = new Tag("western");
-    Tag halal = new Tag("halal");
-    Tag non_halal = new Tag("non-halal");
+    //Possible Tags: spicy, non-spicy, rice, noodle, expensive, cheap, asian, western, halal, non-halal
 
     public static final String COM1_TO_DECK_DIRECTIONS =
         "1. From Com1 entrance main entrance (facing car park), turn right\n"

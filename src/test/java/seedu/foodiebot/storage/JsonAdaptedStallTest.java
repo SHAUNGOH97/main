@@ -17,8 +17,8 @@ public class JsonAdaptedStallTest {
     @Test
     public void toModelType_validStallDetails_returnsStall() throws Exception {
         JsonAdaptedStall stall = new JsonAdaptedStall("Muslim", "The Deck",
-            "5", "taiwanese.png", "muslim",
-            "$", "0");
+            "5", "Muslim.png", "muslim",
+            "$", getTagSet("rice", "spicy", "halal", "cheap"), "0");
         assertEquals(MUSLIM, stall.toModelType());
     }
 

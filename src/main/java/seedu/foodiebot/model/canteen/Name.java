@@ -1,7 +1,7 @@
 package seedu.foodiebot.model.canteen;
 
 import static java.util.Objects.requireNonNull;
-//import static seedu.foodiebot.commons.util.AppUtil.checkArgument;
+import static seedu.foodiebot.commons.util.AppUtil.checkArgument;
 
 /**
  * Represents a Person's name in the address book. Guarantees: immutable; is valid as declared in
@@ -26,7 +26,7 @@ public class Name {
      */
     public Name(String name) {
         requireNonNull(name);
-        //checkArgument(isValidName(name), MESSAGE_CONSTRAINTS);
+        checkArgument(isValidName(name), MESSAGE_CONSTRAINTS);
         fullName = name;
     }
 

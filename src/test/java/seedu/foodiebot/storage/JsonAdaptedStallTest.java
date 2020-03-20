@@ -21,8 +21,8 @@ public class JsonAdaptedStallTest {
     @Test
     public void toModelType_validStallDetails_returnsStall() throws Exception {
         JsonAdaptedStall stall = new JsonAdaptedStall("Muslim", "The Deck",
-            "5", "Muslim.png", "muslim",
-            "$", "0", getTagSet("rice", "spicy", "halal", "cheap"));
+            "5", "taiwanese.png", "muslim",
+            "$", "0", getTagSet("spciy", "rice", "halal", "cheap"));
         assertEquals(MUSLIM, stall.toModelType());
     }
 
@@ -39,7 +39,7 @@ public class JsonAdaptedStallTest {
     public void toModelType_nullName_throwsIllegalValueException() {
         JsonAdaptedStall stall = new JsonAdaptedStall(null, DECK.toString(),
             "5", "taiwanese.png", "asian",
-            "$", "0", getTagSet("rice", "spicy", "halal", "cheap"));
+            "$", "0", getTagSet("spicy"));
         String expectedMessage =
             String.format(MISSING_FIELD_MESSAGE_FORMAT, Name.class.getSimpleName());
         assertThrows(IllegalValueException.class, expectedMessage, stall::toModelType);

@@ -48,7 +48,9 @@ public class Food {
         this.description = description;
         this.stallNo = stallNo;
         this.canteen = canteen;
-        this.foodImageName = foodImageName;
+        //this.foodImageName = foodImageName;
+        this.foodImageName = name;
+        //Current foodImageName will get back image object, cannot use
         this.stallName = stallName;
         this.tags.addAll(tags);
     }
@@ -74,8 +76,9 @@ public class Food {
     }
 
     public Image getFoodImage() {
-        String mImageUrl = IMAGE_FOLDER + canteen + "/" + stallName + "/" + foodImageName;
-        Image image = new Image(Food.class.getResourceAsStream("/images/canteen/Nus Flavors/Western/ComboSet.png"));
+        String mImageUrl = IMAGE_FOLDER + canteen + "/" + stallName + "/" + foodImageName + ".png";
+        System.out.println(mImageUrl);
+        Image image = new Image(Food.class.getResourceAsStream(mImageUrl));
         return image;
     }
 

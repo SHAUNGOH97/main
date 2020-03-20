@@ -209,9 +209,9 @@ public class SampleDataUtil {
     }
 
     public static Food[] getSampleFoods() {
-        return new Food[] { new Food("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "ComboSet.png",
+        return new Food[] { new Food("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "Combo Set.png",
                         1, "Nus Flavors", "Western", getTagSet("western", "expensive")),
-                            new Food("Cai Fan", 3, "1 Meat, 2 Veg", "Caifan.png",
+                            new Food("Cai Fan", 3, "1 Meat, 2 Veg", "Cai Fan.png",
                         1, "The Deck", "Chinese Cooked Food", getTagSet("expensive")),
                             new Food("Ayam Penyet", 5, "Ayam Penyet", "Ayam Penyet.png",
                         15, "The Deck", "Uncle Penyet", getTagSet("asian", "western", "expensive")),
@@ -220,10 +220,9 @@ public class SampleDataUtil {
 
 
     private static FavoriteFood[] getSampleFavoriteFood() {
-        return new FavoriteFood[]{
-            new FavoriteFood("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "ComboSet.png",
+        return new FavoriteFood[]{new FavoriteFood("Combo Set", 6, "1 Meat, 1 Pasta, 2 Sides", "Combo Set.png",
                 1, "Nus Flavors", "Western", getTagSet("1")),
-            new FavoriteFood("Cai Fan", 3, "1 Meat, 2 Veg", "Caifan.png",
+                new FavoriteFood("Cai Fan", 3, "1 Meat, 2 Veg", "Cai Fan.png",
                 1, "The Deck", "Chinese Cooked Food", getTagSet("expensive")),
             new FavoriteFood("Ayam Penyet", 5, "Ayam Penyet", "Ayam Penyet.png",
                 15, "The Deck", "Uncle Penyet", getTagSet("asian", "western", "expensive")),

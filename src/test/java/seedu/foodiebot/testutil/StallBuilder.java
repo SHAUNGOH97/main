@@ -23,6 +23,7 @@ public class StallBuilder {
     public static final Tag DEFAULT_TAG = new Tag("spicy");
     private final Set<Tag> tags = new HashSet<>();
 
+
     private Name name;
     private String canteenName;
     private int stallNumber;

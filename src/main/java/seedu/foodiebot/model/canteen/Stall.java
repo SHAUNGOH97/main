@@ -24,7 +24,9 @@ public class Stall {
         "Duck and Chicken Rice", "Five Grains Bee Hoon", "Indian Cuisine",
         "Japenese Korean", "Mala Hot Pot", "Minced Meat Noodle", "Mixed Veg Rice",
         "Taiwan Cuisine", "Thai Street Food", "Western", "Wok Fried", "Xiao Long Bao",
-        "Yong Tau Foo"};
+        "Yong Tau Foo", "Chinese Cooked Food", "Claypot Seafood Soup", "Indian", "Japanese",
+        "Muslim", "Noodle", "Pasta Express", "Roasted Delights", "Salad Express", "Snacks & Fried Kway Teow",
+        "Uncle Penyet", "Vegetarian", "Western", "Yong Tau Foo & Laksa"};
     public static final String IMAGE_FOLDER = "/images/canteen/";
     private static final Logger logger = LogsCenter.getLogger(Stall.class);
     public static final String MESSAGE_CONSTRAINTS = "Stall name should be from " + Arrays.toString(STALLS);

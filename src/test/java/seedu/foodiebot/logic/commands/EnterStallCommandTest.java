@@ -3,12 +3,12 @@ package seedu.foodiebot.logic.commands;
 import static seedu.foodiebot.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static seedu.foodiebot.testutil.TypicalCanteens.getTypicalFoodieBot;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import seedu.foodiebot.logic.parser.ParserContext;
 import seedu.foodiebot.model.Model;

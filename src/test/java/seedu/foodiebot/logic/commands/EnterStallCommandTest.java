@@ -30,7 +30,7 @@ class EnterStallCommandTest {
 
     @Test
     void execute_success() {
-        Canteen testCanteen = new Canteen(new Name("The Deck"), 0,0, "",
+        Canteen testCanteen = new Canteen(new Name("The Deck"), 0, 0, "",
                 "", "", new HashSet<>(), "", new ArrayList<>());
         ParserContext.setCurrentCanteen(Optional.of(testCanteen));
         assertCommandSuccess(new EnterStallCommand("Western"), EnterStallCommand.COMMAND_WORD, model,
